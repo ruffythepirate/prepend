@@ -8,6 +8,10 @@ The program is intended to prepend a text to the text that is being streamed to 
 
 `cat myData | amm prepend --text "hello world!"` writes a line of `hello world` before the text content in the file `myData`.
 
+You can also use it through podman/docker:
+
+`echo "hello" | podman run --rm -i ruffythepirate/prepend --text "Before the world"
+`
 # Requirements
 
 * Ammonite (https://github.com/lihaoyi/Ammonite)[Ammonite] with its requirements.
